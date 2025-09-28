@@ -3,8 +3,13 @@ Mkdocs plugin to generate a color swatch when a color code is used.
 
 # How To Use
 Every instance of `<AARRGGBB>` and `<RRGGBB>`, if a valid color, will be replaced with a color swatch.
-
-## Custom Style Sheet
+## Installation 
+Add the path to plugin.py to your mkdocs.yml configuration file
+``` yml
+hooks:
+ - path/mkdocs_colorcode/plugin.py
+```
+### Custom Style Sheet
 A custom style sheet needs to be added to the mkdocs configuration
 ``` yml
 extra_css:

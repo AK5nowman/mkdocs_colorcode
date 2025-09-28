@@ -6,7 +6,6 @@ logger = get_plugin_logger(__name__)
 color_pattern : re.Pattern = re.compile(r'<([a-fA-F\d]{0,2})([A-Fa-f\d]{6})>')
 
 def on_page_markdown(markdown: str, page: Page, config, files):
-    logger.info(f"Custom plugin for page {page.title}")
     # Callback for regex sub function.
     def sub_cb(match):
         original = match.group(0)
